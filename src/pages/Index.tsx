@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, StarIcon } from 'lucide-react';
+import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon } from 'lucide-react';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +46,20 @@ const Index = () => {
       description: "Mantente informado sobre novedades del sistema de transporte público"
     }
   ];
-
+  const tools = [
+    {
+      icon: <Route className="w-8 h-8" />,
+      name: "Rutas Por Empresa",
+      description: "Genera widgets embebidos de rutas por empresa",
+      link: "/routes"
+    },
+    {
+      icon: <MapPin className="w-8 h-8" />,
+      name: "Rutas Cercanas",
+      description: "Crea widgets de rutas cercanas a una ubicación específica",
+      link: "/near-routes"
+    }
+  ];
   return (
     <div className="min-h-screen bg-white font-nunito">
       {/* Navigation */}
@@ -66,6 +79,9 @@ const Index = () => {
                 </a>
                 <a href="#features" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   Características
+                </a>
+                <a href="#tools" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                  Herramientas
                 </a>
                 <a href="#cities" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   Ciudades
@@ -110,6 +126,9 @@ const Index = () => {
               </a>
               <a href="#features" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
                 Características
+              </a>
+              <a href="#tools" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                Herramientas
               </a>
               <a href="#cities" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
                 Ciudades
@@ -230,6 +249,45 @@ const Index = () => {
                 <p className="text-gray-600">
                   {feature.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Tools Section */}
+      <section id="tools" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Herramientas para Desarrolladores
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Integra widgets de Q'ruta en tu sitio web o aplicación con nuestros generadores de código.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {tools.map((tool, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              >
+                <div className="text-accent mb-4">
+                  {tool.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  {tool.name}
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  {tool.description}
+                </p>
+                <a
+                  href={tool.link}
+                  className="inline-flex items-center bg-primary hover:bg-primary-light text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  <Code className="w-4 h-4 mr-2" />
+                  Generar Código
+                </a>
               </div>
             ))}
           </div>
@@ -410,6 +468,9 @@ const Index = () => {
                 </a>
                 <a href="#features" className="block text-gray-300 hover:text-white transition-colors">
                   Características
+                </a>
+                <a href="#tools" className="block text-gray-300 hover:text-white transition-colors">
+                  Herramientas
                 </a>
                 <a href="#cities" className="block text-gray-300 hover:text-white transition-colors">
                   Ciudades
