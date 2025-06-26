@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon } from 'lucide-react';
+import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon, ArrowDownToLine } from 'lucide-react';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -212,6 +212,15 @@ const Index = () => {
                       <div>
                         <h3 className="font-semibold">Calificación</h3>
                         <p className="text-sm text-gray-300">4.4</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                        <ArrowDownToLine className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">Descargas</h3>
+                        <p className="text-sm text-gray-300">50 mil+</p>
                       </div>
                     </div>
                   </div>
