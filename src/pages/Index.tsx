@@ -72,7 +72,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="#" className="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   Inicio
@@ -92,7 +92,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4">
               <a href={links.playstore} className="bg-primary hover:bg-primary-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                 <i className="fab fa-google-play mr-2"></i>
                 Google Play
@@ -107,7 +107,7 @@ const Index = () => {
               </a>
             </div>
 
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-700 hover:text-primary focus:outline-none"
@@ -119,7 +119,7 @@ const Index = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
               <a href="#" className="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
                 Inicio
