@@ -1,0 +1,41 @@
+1 -
+Genera un landing page html + css + js sobre una aplicación para dispositivos móviles llamada Q’ruta.
+
+Esta app sirve de guía a los usuarios para saber qué rutas puede usar para llegar a cualquier destino en la ciudad.
+
+Además del cálculo de rutas tiene las siguientes características:
+- ver qué rutas transitan cerca de su ubicación actual 
+- Lista de todas las rutas disponibles 
+- Detalle de cada ruta incluyendo imágenes, horarios, recorrido y listado de paradas.
+- Noticias y publicaciones sobre el sistema de transporte.
+
+La aplicación está en Android ,iOS y pwa 
+
+La aplicación se encuentra en varias ciudades de Colombia barranquilla, bogota, bucaramanga, cali, cartagena, medellin, neiva, santa marta, tunja y valledupar
+, ampliando sus barreras sobre todo el territorio, a futuro nivel internacional.
+
+el color primario es #011f35 convinado con #fff, puedes convinarlo con los que creas conveniente.
+
+tipo de letra principal se llama nunito
+
+Requerimientos esenciales:
+- Cualquier fuente de iconos
+- Responsive 
+- Tener un navbar con logo y links para descarga, appstore, playstore y pwa
+- Seccion resumen del funcionamiento del app, funcionamiento detallado, ciudades... etc
+- Permitir que los motores de búsqueda identifiquen fácil mente  la página 
+- Formulario de contacto
+- Links a redes sociales, instagram, facebook, x
+
+A futuro
+- Disponible en estos idiomas: español, aleman, ingles, frances, italiano, Neerlandés, polaco, portugues y chino
+- Sección de como ayudarnos a nosotros, principalmente actualizacion de rutas, informacion sobre ciudades, etc
+- Seccion Api, un card con este titulo "Empresas de transporte", contenido "Muestra tus rutas con toda la informacion a los usuarios en tu pagina o redes sociales" y un boton que diga "Ver documentacion". Y otra card de titulo "Lugares o eventos" de contenido "Muestra a tus usuarios como llegar a ti" y un boton que diga, "ver documentacion"
+
+2 - 
+Ahora necesito agregar 2 paginas mas, ambas son generadores de link , código embebido y el preview de ese link en vivo preferiblemente del lado derecho y medidas entre 300px de ancho y 500px de alto, pueden ser menores para mejores ajustes.
+Tambien es necesario presentarlas en la pagina principal y generar un link para cada una de ellas.
+
+La primera se llama routes que solicita al usuario que seleccione ciudad en un select y empresa en otro select.
+
+La segunda se llana nearRoutes que solicita al usuario que agregue un titulo, un campo auto completado de lugares que a su vez escriba latitud y longitud en otros 2 campos, que también pueden ser escritos manualmente, un checkbox por defecto en true que diga mostrar mapa y opcionalmente un input de texto donde puede pegar la url del icono  
