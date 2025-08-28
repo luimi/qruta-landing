@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon, ArrowDownToLine } from 'lucide-react';
+import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon, ArrowDownToLine, MessageCircleQuestion } from 'lucide-react';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,7 +103,7 @@ const Index = () => {
               </a>
               <a href={links.pwa} className="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
                 <i className="fab fa-solid fa-globe mr-2"></i>
-                PWA
+                Web
               </a>
             </div>
 
@@ -193,7 +193,7 @@ const Index = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold">Aplicación Móvil</h3>
-                        <p className="text-sm text-gray-300">Android, iOS y PWA</p>
+                        <p className="text-sm text-gray-300">Android, iOS y Web</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -410,7 +410,7 @@ const Index = () => {
               </h3>
               <div className="space-y-6 mb-12">
                 <div className="flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-accent mr-4" />
+                  <MessageCircleQuestion className="w-6 h-6 text-accent mr-4" />
                   <span className="text-gray-600 text-lg">+57 (301) 366-2941</span>
                 </div>
                 <div className="flex items-center justify-center">
