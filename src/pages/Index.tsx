@@ -19,8 +19,8 @@ const Index = () => {
     twitter: "https://twitter.com/QRuta1"
   }
   const cities = [
-    'Barranquilla', 'Bogotá', 'Bucaramanga', 'Cali',
-    'Cartagena', 'Medellín', 'Neiva', 'Santa Marta',
+    'Armenia', 'Barranquilla', 'Bogotá', 'Bucaramanga', 'Cali',
+    'Cartagena','Ibagué' ,'Medellín', 'Neiva', 'Pasto', 'Santa Marta',
     'Tunja', 'Valledupar'
   ];
 
