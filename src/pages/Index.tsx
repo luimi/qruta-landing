@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon, ArrowDownToLine, MessageCircleQuestion } from 'lucide-react';
+import logo from '../assets/qruta-name-black.svg';
+import logo_white from '../assets/qruta-name.png';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +70,7 @@ const Index = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-gradient">Q'ruta</h1>
+                <img src={logo} alt="Q'ruta Logo" className="h-8 w-auto" />
               </div>
             </div>
 
@@ -147,7 +149,7 @@ const Index = () => {
                 </a>
                 <a href={links.pwa} className="w-full bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors block text-center">
                   <i className="fab fa-solid fa-globe mr-2"></i>
-                  Progresive Web App (PWA)
+                  Web
                 </a>
               </div>
             </div>
@@ -447,7 +449,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-accent mb-4">Q'ruta</h3>
+              <img src={logo_white} alt="Q'ruta Logo" className="h-8 w-auto" />
               <p className="text-gray-300">
                 Tu compañero confiable para el transporte público en Colombia.
               </p>
@@ -465,7 +467,7 @@ const Index = () => {
                 </a>
                 <a href={links.pwa} className="block text-gray-300 hover:text-white transition-colors">
                   <i className="fas fa-globe mr-2"></i>
-                  Progressive Web App
+                  Web
                 </a>
               </div>
             </div>
