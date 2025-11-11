@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, MapPin, Route, Clock, Smartphone, Users, Globe, Phone, Mail, MapPinIcon, Code, Link as LinkIcon, StarIcon, ArrowDownToLine, MessageCircleQuestion } from 'lucide-react';
 import logo from '../assets/qruta-name-black.svg';
 import logo_white from '../assets/qruta-name.png';
+import politicas from '../assets/politicas-de-privacidad.pdf';
+import terminos from '../assets/terminos-y-condiciones-del-uso.pdf';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -508,7 +510,7 @@ const Index = () => {
           </div>
           <hr className="border-gray-600 my-8" />
           <div className="text-center text-gray-300">
-            <p>&copy; 2025 Q'ruta. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Q'ruta. Todos los derechos reservados. <a href={politicas} target="_blank">Política de privacidad</a> y <a href={terminos} target="_blank">condiciones de uso</a></p>
           </div>
         </div>
       </footer>
