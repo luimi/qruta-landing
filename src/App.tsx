@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
 import { connect } from "./lib/server";
 import PrivacyPolicies from "./pages/PrivacyPolicies";
+import TermsConditions from "./pages/terms-conditions";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/near-routes" element={<NearRoutes />} />
           <Route path="/privacy-policies" element={<PrivacyPolicies />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
