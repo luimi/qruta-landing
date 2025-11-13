@@ -457,7 +457,7 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Descarga la App</h4>
+              <h4 className="font-semibold mb-4">Usa la App</h4>
               <div className="space-y-2">
                 <a href={links.playstore} className="block text-gray-300 hover:text-white transition-colors">
                   <i className="fab fa-google-play mr-2"></i>
@@ -504,6 +504,15 @@ const Index = () => {
                 </a>
                 <a href={links.twitter} className="text-gray-300 hover:text-white transition-colors">
                   <i className="fab fa-twitter text-xl"></i>
+                </a>
+              </div>
+              <h4 className="font-semibold mb-4 mt-4">Legales</h4>
+              <div className="space-y-2">
+                <a href="/privacy-policies" className="block text-gray-300 hover:text-white transition-colors">
+                  Política de privacidad
+                </a>
+                <a href="/terms-conditions" className="block text-gray-300 hover:text-white transition-colors">
+                  Condiciones de uso
                 </a>
               </div>
             </div>
